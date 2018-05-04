@@ -1,4 +1,4 @@
-CFLAGS = -std=c11 -Wall -Wextra -O3 -flto
+CFLAGS = -std=c11 -Wall -Wextra -O3 -march=native -flto
 EXE = test
 OBJS = test.o mr_prime.o
 

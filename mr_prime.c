@@ -9,8 +9,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-const unsigned a_arr[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37 };
-const size_t a_arr_len = 12;
+static const unsigned a_arr[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37 };
+static const size_t a_arr_len = 12;
 
 static uint64_t mod_exp(uint64_t b, uint64_t e, uint64_t m)
 {

@@ -6,6 +6,7 @@
 
 int main(void)
 {
+	printf("n: ten least k's for which 2^n-k is prime\n");
 	for (int n = 8; n != 65; ++n) {
 		printf("%d: ", n);
 		int count = 0;

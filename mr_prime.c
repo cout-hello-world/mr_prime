@@ -43,7 +43,8 @@ bool mr_prime(const uint64_t n)
 	for (size_t i = 0; i != a_arr_len; ++i) {
 		unsigned a = a_arr[i];
 		for (unsigned r = 0; r != s; ++r) {
-			if (mod_exp(a, d, n) == 1 || mod_exp(a, (1 << r) * d, n) == n - 1) {
+			if (mod_exp(a, d, n) == 1 ||
+			    mod_exp(a, ((uint64_t)1 << r) * d, n) == n - 1) {
 				goto could_be_prime;
 			}
 		}
